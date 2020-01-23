@@ -1,8 +1,11 @@
 var enterButton = document.getElementById("enter");
-//  to the folders..
+//  GO TO HTML DOCUMENT ID AND LOOK FOR "ENTER".
 var input = document.getElementById("userInput");
+//  GO TO HTML DOCUMENT ID AND LOOK FOR "USERINOUT".
 var ul = document.querySelector("ul");
+//  GO TO HTML DOCUMENT ID AND LOOK FOR "UL".
 var item = document.getElementsByTagName("li");
+//  GO TO HTML FOLDER ID AND LOOK FOR "LI".
 // tag
 
 function inputLength(){
@@ -14,12 +17,11 @@ function listLength(){
 }
 
 function createListElement() {
-  //function name,
+           //function name,
 	var li = document.createElement("li"); // creates an element "li"
 	li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
 	ul.appendChild(li); //adds li to ul
 	input.value = ""; //Reset text input field
-
 
 	//START STRIKETHROUGH
 	// because it's in the function, it only adds it for new items
