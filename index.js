@@ -1,17 +1,20 @@
 var enterButton = document.getElementById("enter");
+//  to the folders..
 var input = document.getElementById("userInput");
 var ul = document.querySelector("ul");
 var item = document.getElementsByTagName("li");
+// tag
 
 function inputLength(){
 	return input.value.length;
 }
-
+// blue are all javacript
 function listLength(){
 	return item.length;
 }
 
 function createListElement() {
+  //function name,
 	var li = document.createElement("li"); // creates an element "li"
 	li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
 	ul.appendChild(li); //adds li to ul
